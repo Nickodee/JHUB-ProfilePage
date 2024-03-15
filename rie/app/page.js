@@ -8,7 +8,6 @@ import Image from "next/image";
 import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
 import Link from "next/link";
-import VideoBg from './images/video_bg.mp4'
 
 export default function Home() {
   return (
@@ -16,7 +15,7 @@ export default function Home() {
       <section className="w-full">
         <video>
         </video>
-        <div className="text-center my-3">
+        <div className="text-center">
           <h1 className="text-3xl">Research and Innovators Ecosystem</h1>
           <p>Education | Research</p>
         </div>
