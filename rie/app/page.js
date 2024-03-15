@@ -2,22 +2,26 @@ import NavLayout from "./components/Navbar/NavLayout";
 import Martin from './images/Martine1.jpg'
 import Nick from './images/nick1.jpg'
 import Bethuel from './images/Bethuel.jpg'
+import ClimateAiMl from './images/cc.png'
 import VirtualCoWorker from './images/virtual-coworkers.jpg'
 import Image from "next/image";
-import { FaXTwitter,FaLinkedin } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
 import Link from "next/link";
-import videoBg from './images/video_bg.mp4'
+import VideoBg from './images/video_bg.mp4'
 
 export default function Home() {
   return (
     <NavLayout>
-      <section className="h-[100vh] w-full">
-      <video className='w-full h-full' autoPlay muted loop>
-        <source src={videoBg} type="video/mp4" />
-      </video>
+      <section className="w-full">
+        <video>
+        </video>
+        <div className="text-center my-3">
+          <h1 className="text-3xl">Research and Innovators Ecosystem</h1>
+          <p>Education | Research</p>
+        </div>
       </section>
-      <section className="bg-gray-100 p-4">
+      <section className="bg-gray-100 p-4" id="project">
         <h1 className="mb-4 text-2xl text-center font-semibold">Project Description</h1>
         <div className="flex flex-col md:flex-row w-full gap-7">
           <div className="h-[300px] w-full">
@@ -35,19 +39,25 @@ export default function Home() {
                 <li>3. Direct messaging</li>
                 <li>4. Chatroom and conference room</li>
                 <li>5. User profile</li>
-                <li>6. AI-powered recommendation</li>
               </ol>
             </div>
           </div>
         </div>
         <div className="mt-3">
-          <h1 className="text-2xl font-semibold">Benefits & Impacts</h1>
+          <h1 className="text-2xl font-semibold text-blue-500">Benefits & Impacts</h1>
           <div className="w-[110px] h-[3px] bg-black"></div>
-          <div className="flex">
+          <div className="flex flex-col md:flex-row w-full gap-7">
             <div className="w-full">
-
+              <ol className="mt-3">
+                <li>1. Global collaboration and knowledge sharing on the trending global issues.</li>
+                <li>2. Increased innovation and creativity as a result of the diverse project collaboration.</li>
+                <li>3. Increased success rate of project implementation</li>
+                <li>4. Reduced Project implementation time.</li>
+              </ol>
             </div>
-            <div className="w-full"></div>
+            <div className="w-full h-[350px]">
+              <Image src={ClimateAiMl} alt="" className="h-full w-full object-cover rounded-md" />
+            </div>
           </div>
         </div>
         <div className="mt-3">
@@ -57,7 +67,7 @@ export default function Home() {
           </div>
           <div className="mt-3 flex flex-wrap gap-10 justify-center">
             <div className="rounded p-2 w-[400px] bg-white hover:shadow-lg">
-              <h1 className="text-blue-500">University students</h1>
+              <h1 className="text-blue-500">1. University students</h1>
               <ul className="ml-4">
                 <li>. To get project partners (Inter-departmental, inter-university partnership).</li>
                 <li>. Share resources and join discussion groups.</li>
@@ -66,7 +76,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="bg-white rounded p-2 w-[400px] hover:shadow-lg">
-              <h1 className="text-blue-500">Researchers and Innovators</h1>
+              <h1 className="text-blue-500">2. Researchers and Innovators</h1>
               <ul className="ml-4">
                 <li>. To get project partners.</li>
                 <li>. Share resources and join discussion groups.</li>
@@ -74,6 +84,10 @@ export default function Home() {
                 <li>. Receive job notifications and Upcoming Conferences</li>
               </ul>
             </div>
+          </div>
+          <div className="flex items-center gap-6 justify-center mt-3 text-blue-500">
+            <h1>3. Universities and colleges</h1>
+            <h1>4. Research and development centers</h1>
           </div>
         </div>
       </section>
