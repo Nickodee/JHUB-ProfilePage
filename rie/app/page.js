@@ -13,8 +13,6 @@ export default function Home() {
   return (
     <NavLayout>
       <section className="w-full">
-        <video>
-        </video>
         <div className="text-center">
           <h1 className="text-3xl">Research and Innovators Ecosystem</h1>
           <p>Education | Research</p>
@@ -130,7 +128,7 @@ export default function Home() {
             <div className="mt-3">
               <h1 className="font-bold">Bethuel Govoga</h1>
               <h3 className="text-[10px] text-blue-600">Software Developer | Cloud  Engineer</h3>
-              <p>The coo</p>
+              <p className="text-[13px]">Cloud Enthusiast</p>
             </div>
             <div className="flex gap-3 mt-3">
               <Link href="https://www.linkedin.com/in/bethuel-govoga-02b95523a/"><FaLinkedin /></Link>
